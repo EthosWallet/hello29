@@ -1,0 +1,39 @@
+{
+    "name": "company/awesome-project",
+    "description": "An awesome PHP project",
+    "type": "project",
+    "homepage": "https://github.com/missing-php-org/awesome-project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Developer",
+            "email": "dev@example.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gone-support/php-issues",
+        "source": "https://github.com/claimable-php/main-source",
+        "docs": "https://github.com/vanished-docs/php-documentation"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abandoned-company/legacy-php-project"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/missing-vcs/custom-packages"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/deleted-repo/private-packages"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "symfony/console": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}
