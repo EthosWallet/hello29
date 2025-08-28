@@ -1,0 +1,36 @@
+resolver: lts-20.0
+
+packages:
+- .
+
+extra-deps:
+- git: https://github.com/missing-haskell-org/awesome-haskell-lib
+  commit: abc123def456
+- git: https://github.com/abandoned-haskell/legacy-package
+  commit: def456ghi789
+- git: https://github.com/claimable-haskell/custom-tools
+  commit: ghi789jkl012
+  subdirs:
+    - lib
+    - tools
+- git: https://github.com/vanished-dev/haskell-utilities
+  commit: jkl012mno345
+- location:
+    git: https://github.com/gone-haskell/internal-libs
+    commit: mno345pqr678
+  extra-dep: true
+- location:
+    git: https://github.com/deleted-haskell/old-project
+    commit: pqr678stu901
+  subdirs:
+    - core
+    - extensions
+
+flags: {}
+extra-package-dbs: []
+
+ghc-options:
+  "$everything": -haddock
+
+system-ghc: false
+install-ghc: true
