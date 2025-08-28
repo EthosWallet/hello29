@@ -1,0 +1,43 @@
+name: awesome_flutter_app
+description: An awesome Flutter application
+version: 1.0.0+1
+homepage: https://github.com/missing-flutter-org/awesome-app
+repository: https://github.com/abandoned-flutter/legacy-project
+issue_tracker: https://github.com/gone-issues/flutter-tracker/issues
+documentation: https://github.com/vanished-docs/flutter-docs
+
+environment:
+  sdk: '>=2.18.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  
+  # Git dependencies that don't exist
+  custom_flutter_package:
+    git:
+      url: https://github.com/claimable-flutter/custom-package
+      ref: main
+  
+  internal_widgets:
+    git:
+      url: https://github.com/missing-widgets/internal-tools
+      path: packages/widgets
+  
+  legacy_components:
+    git: https://github.com/deleted-components/legacy-flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  
+  dev_tools:
+    git:
+      url: https://github.com/gone-dev/flutter-dev-tools
+      ref: development
+
+flutter:
+  uses-material-design: true
