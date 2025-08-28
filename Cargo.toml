@@ -1,0 +1,29 @@
+[package]
+name = "awesome-rust-app"
+version = "0.1.0"
+edition = "2021"
+authors = ["Developer <dev@example.com>"]
+description = "An awesome Rust application"
+homepage = "https://github.com/missing-rust-org/awesome-rust-app"
+repository = "https://github.com/abandoned-rust/legacy-project"
+documentation = "https://github.com/vanished-docs/rust-documentation"
+license = "MIT"
+keywords = ["awesome", "rust", "application"]
+
+[dependencies]
+serde = "1.0"
+tokio = "1.0"
+# Git dependencies that don't exist
+custom-rust-lib = { git = "https://github.com/claimable-rust/custom-library" }
+internal-tool = { git = "https://github.com/gone-tools/rust-internal", branch = "main" }
+legacy-crate = { git = "https://github.com/deleted-crates/legacy-stuff", tag = "v1.0" }
+
+[dev-dependencies]
+dev-helper = { git = "https://github.com/missing-dev/rust-helpers" }
+
+[patch.crates-io]
+patched-crate = { git = "https://github.com/nonexistent-patch/crate-fixes" }
+
+[[bin]]
+name = "awesome-app"
+path = "src/main.rs"
